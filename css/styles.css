@@ -1,7 +1,9 @@
+html{
+    font-family: 'Montserrat';
+}
 body {
     background-color: white;
     margin: auto;
-    font: 'Montserrat', sans-serif;
     font-weight: 100%;
 }
 menu{
@@ -32,7 +34,7 @@ img {
     float: left;
     display: block;
     padding: 0 20px 0 0;
-    top: 200px;
+    top: 100px;
 }
 .grid {
     display: grid;
@@ -66,4 +68,34 @@ h1 {
         grid-template-columns: 1fr 3fr;
         column-gap: 20px;
     }
+}
+.about {
+    margin-top: 150px;
+    padding-left: 0 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 0 20px 0 20px;
+}
+@media screen and (width: 1900px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
     }
+}
+@media screen and (max-width: 400px) {
+    .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+.main{
+    width: 300px;
+    padding: 0 20px;
+}
+.deco{
+    width: 300px;
+}
