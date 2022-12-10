@@ -1,8 +1,8 @@
 html{
-    font-family: 'Montserrat';
+    font-family: 'Consolas';
 }
 body {
-    background-color: white;
+    background-color: mistyrose;
     margin: auto;
     font-weight: 100%;
 }
@@ -13,6 +13,7 @@ menu{
     background-color: mistyrose;
     border: 5px solid #7879F1;
     padding: .5em;
+    display: flex;
 }
 menu ul {
     display: flex;
@@ -27,7 +28,7 @@ menu a {
 }
       
 menu a:hover {
-    background-color: #78F1B7
+    background-color: rgb(246, 181, 174)
 }
 img {
     max-width: 100%;
@@ -45,10 +46,17 @@ img {
     gap: 10px;
 }
 .feature{
-    width: 300px;
+    width: 100%;
     margin-top: 150px;
+    float: left;
 }
-h1 {
+#title {
+    text-align: center;
+    margin-top: 150px;
+    padding: 0 20px; 
+}
+#game-title {
+    text-align: center;
     margin-top: 150px;
     padding: 0 20px;
 }
@@ -93,9 +101,35 @@ h1 {
 }
 }
 .main{
-    width: 300px;
+    width: 30%;
     padding: 0 20px;
 }
 .deco{
-    width: 300px;
+    width: 100%;
+}
+.gameboard {
+    max-width: 50%;
+	margin: 2% auto;
+}
+.square {
+    background: black;
+    width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.5%;
+	border-radius: 15%;
+}
+#instructions {
+    text-align: center;
+}
+.reset-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+#navigation {
+	text-align: center;
+    padding: 2.5%;
+}
+#scoreboard {
+	margin-left: 15%;
 }
